@@ -152,3 +152,57 @@ nav ul li{
     padding: 20px;
     margin: 10px;
 }
+
+.projects{
+    background-color: var(--bg-color);
+    padding: 10px 0;
+    margin-top:2rem;
+}
+
+.project-pic{
+    width: 400px;
+    height: 400px;
+    padding:15px;
+    margin:auto;
+}
+
+.projects-title{
+    text-align: center;
+    margin-bottom:2rem;
+    font-family: Century Gothic;
+}
+
+.project-container{
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.project-container p{
+    padding:0.5rem;
+
+}
+.project-title{
+    margin-bottom: var(--bottom-margin);
+    font-family: Century Gothic;
+    color: #CB6A3D;
+    text-align: center;
+}
+.project-details{
+    margin-bottom: var(--bottom-margin);
+    font-family: Century Gothic;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.project-card{
+    background-color: #fff;
+    border-radius: 1px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 1px;
+    margin: 10px;
+    font-style: oblique;
+    text-align: center;
+}
