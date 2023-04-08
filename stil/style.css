@@ -206,3 +206,181 @@ nav ul li{
     font-style: oblique;
     text-align: center;
 }
+
+.contact{
+    margin-top: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact h2{
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+    color: black;
+    font-family: Century Gothic;
+}
+
+.contact-form-container{
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0.9rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+.contact-form-container label{
+    line-height: 2.5em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+    font-family: Century Gothic;
+}
+.contact-form-container textarea{
+    min-height: 6.5rem;
+    font-size: 14px;
+}
+.contact-form-container .input-field{
+    width:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: 2px inset var(--primary-color);
+    font-size: 0.8rem;
+    outline: none;
+}
+
+.input-field::placeholder{
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+
+.submit-btn{
+    width: 45%;
+    padding: 5px;
+    margin: 10px 0;
+    background-color: #CB6A3D;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+}
+.submit-btn:hover{
+    background-color: #a17a69;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+footer{
+    background-color: var(--primary-color);
+    margin: 2rem 0 0;
+    padding: 1.25rem;
+    text-align:center;
+    color: #fcfcfc;
+    font-weight: var(--bold-font);
+}
+.scroll-up{
+    position:fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+.up-arrow{
+    width: 3rem;
+    height: 3rem;
+}
+
+/* prilagoduvanje na pomal ekran -720px, "hamburger" meni*/
+@media  screen and (max-width: 720px) {
+
+    nav {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    /* hero delot, more about, skills, projects, contact responsive */
+    .hero {
+        margin-top: -4rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero-img {
+        height: 400px;
+        width: 20.5rem;
+        margin-top: 100px;
+    }
+
+    .bio {
+        margin-top: 3.5rem;
+        margin-bottom: 2rem;
+        width: 20.5rem;
+    }
+
+    .more-about {
+        margin-top: 1.5rem;
+        padding: 1rem 3.5rem;
+    }
+
+    .more-about h2 {
+        text-align: center;
+    }
+
+    .more-about p {
+        text-align: center;
+    }
+
+    .icon {
+        width: 6rem;
+        height: 5.25rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .projects-container {
+        width: 20rem;
+    }
+
+    .contact-form-container {
+        max-width: 23.20rem;
+    }
+}
+
+/* za pomali ekrani -420px responsive */
+@media screen and(max-width: 420px){
+    .hero-img{
+        height:37rem;
+        width:23rem;
+    }
+    .bio{
+        width:18rem;
+    }
+    .project-container{
+        width:15rem;
+    }
+    .contact-form-container{
+        max-width: 14.5rem;
+    }
+}
