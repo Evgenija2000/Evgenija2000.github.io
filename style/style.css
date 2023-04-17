@@ -394,7 +394,7 @@ footer {
 
     .projects-container {
         flex-direction: column;
-        width: 15rem;
+        max-width: 23.20rem;
     }
 
     .contact-form-container {
@@ -414,7 +414,7 @@ footer {
     }
 
     .project-container {
-        width: 15rem;
+        max-width: 14.5rem;
     }
 
     .contact-form-container {
